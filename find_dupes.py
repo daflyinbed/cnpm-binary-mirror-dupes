@@ -80,6 +80,18 @@ def main():
                 file_type = "robotjs"
             elif "atom" in last_two:
                 file_type = "atom"
+            elif "Atom" in last_two:
+                file_type = "atom"
+            elif "Git" in last_two:
+                file_type = "git-for-windows"
+            elif "git" in last_two:
+                file_type = "git-for-windows"                
+            elif "utf-8-validate" in last_two:
+                file_type = "utf-8-validate"
+            elif "sharp" in last_two:
+                file_type = "sharp"
+            elif "geckodriver" in last_two:
+                file_type = "geckodriver"
             else:
                 file_type = "其他"
             groups[(size, last_two, file_type)].append((pkg, obj["url"]))
